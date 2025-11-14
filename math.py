@@ -1,5 +1,5 @@
 def multiply(x):
-    return 2 * x
+    return 8 * x
 
 def dividir(x):
     return x / 2
