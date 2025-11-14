@@ -1,26 +1,9 @@
-# main.py
-# Punto de entrada del programa.
+# diccionario.py
+# Módulo encargado de almacenar definiciones básicas.
 
-from diccionario import obtener_definicion
-from practicas import obtener_pregunta
-
-def menu():
-    print("=== Asistente Educativo ===")
-    print("1. Buscar definición")
-    print("2. Obtener pregunta de práctica")
-    print("3. Salir")
-
-while True:
-    menu()
-    opcion = input("Selecciona una opción: ")
-
-    if opcion == "1":
-        termino = input("Escribe el término que deseas buscar: ")
-        print("Definición:", obtener_definicion(termino))
-    elif opcion == "2":
-        print("Pregunta:", obtener_pregunta())
-    elif opcion == "3":
-        print("¡Hasta luego! Sigue estudiando :)")
-        break
-    else:
-        print("Opción no válida. Intenta de nuevo.")
+def obtener_definicion(termino):
+    definiciones = {
+        "fotosíntesis": "Proceso mediante el cual las plantas convierten la luz solar en energía química.",
+        "mitosis": "Proceso de división celular que produce dos células hijas idénticas.",
+        "ecosistema": "Conjunto de organismos que interactúan entre sí y con su ambiente.",
+    }
